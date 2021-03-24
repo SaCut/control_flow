@@ -48,4 +48,4 @@ food_bill = {
 # exercise
 # print the name and the bill amount for each person
 for i in food_bill.values():
-	print("name:", i["name"] + ",", "bill:", i["bill"])
+	print(f'name: {i["name"]}, bill: {i["bill"]}')

@@ -33,5 +33,46 @@ else:
 #### For loops
 - `for` loops iterate over a set of values, using a range function (a function that returns a list of elements)
 
+
+##### exercises
+- We used loops to iterate through a shopping list:
+```python
+shopping_list = ["bread", "eggs", "milk", "orange"]
+
+# the non-loop way
+print(shopping_list[0])
+print(shopping_list[1])
+print(shopping_list[2])
+print(shopping_list[3])
+
+# with for loop
+for i in shopping_list:
+	print(i)
+```
+
+- We used `break` to interrupt a for loop:
+```python
+for i in shopping_list:
+	if i == "milk":
+		print("found the milk")
+		break
+	else:
+		print("not milk")
+```
+
+
+- We iterated through a dictionary:
+```python
+food_bill = {
+	1: {"name": "James", "bill": "£1"},
+	2: {"name": "Bond", "bill": "£2"},
+	3: {"name": "Shah", "bill": "£3"}
+}
+
+# print the name and the bill amount for each person
+for i in food_bill.values():
+	print(f'name: {i["name"]}, bill: {i["bill"]}')
+```
+
 #### While loops
 - `while` loops iterate until a boolean condition is met, the condition being dependent on some value that is changed inside the loop.
