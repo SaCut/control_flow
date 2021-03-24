@@ -32,7 +32,11 @@ else:
 
 #### For loops
 - `for` loops iterate over a set of values, using a range function (a function that returns a list of elements)
-
+- `for` loop syntax is:
+```python
+for item in iterable_element:
+	some_code
+```
 
 ##### exercises
 - We used loops to iterate through a shopping list:
@@ -46,14 +50,14 @@ print(shopping_list[2])
 print(shopping_list[3])
 
 # with for loop
-for i in shopping_list:
-	print(i)
+for item in shopping_list:
+	print(item)
 ```
 
 - We used `break` to interrupt a for loop:
 ```python
-for i in shopping_list:
-	if i == "milk":
+for item in shopping_list:
+	if item == "milk":
 		print("found the milk")
 		break
 	else:
@@ -70,9 +74,17 @@ food_bill = {
 }
 
 # print the name and the bill amount for each person
-for i in food_bill.values():
-	print(f'name: {i["name"]}, bill: {i["bill"]}')
+for person in food_bill.values():
+	print(f'name: {person["name"]}, bill: {person["bill"]}')
 ```
 
 #### While loops
 - `while` loops iterate until a boolean condition is met, the condition being dependent on some value that is changed inside the loop.
+- `while` loops are used instead of `for` when the cone needs to be iterated over not a set amount of times, but until a certain condition is met
+- `while` syntax is:
+```python
+while condition_is_true:
+	some_code
+	# the execution stops when the condition becomes false
+```
+
