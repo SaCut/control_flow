@@ -24,3 +24,14 @@ elif condition:
 else:
 	some_code
 ```
+
+### Control Flow loops
+- Loops are used to iterate over some given block of code
+- There are two kinds of loops in Python, `for` and `while`
+- Among others, loops have two methods called 'break' and 'continue'. Break interrupts the loop and tells the interpreter to execute any code that comes after, while continue intterupts the current iteration of the loop to move to the successive one
+
+#### For loops
+- `for` loops iterate over a set of values, using a range function (a function that returns a list of elements)
+
+#### While loops
+- `while` loops iterate until a boolean condition is met, the condition being dependent on some value that is changed inside the loop.
