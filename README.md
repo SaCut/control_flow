@@ -87,4 +87,11 @@ while condition_is_true:
 	some_code
 	# the execution stops when the condition becomes false
 ```
-
+##### exercise
+- We used a while loop to get the user's age
+```python
+age = input("please enter you age: ")
+while not age.isdigit():
+	age = input("please insert your age in digits: ")
+print(f"you are {age} years old")
+```
